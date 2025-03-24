@@ -1,0 +1,5 @@
+#!/bin/bash
+# co_to_f - A wrapper script for the code_to_flowchart.py tool
+
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+python3 "$SCRIPT_DIR/code_to_flowchart.py" "$@"
