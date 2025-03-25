@@ -37,8 +37,6 @@ def main():
 - **Simple to use** - Just point it at your Python file and watch the magic happen
 - **Grid-based layout** - Everything is aligned for that professional look
 - **Smart shape sizing** - Automatically adjusts shape sizes based on flowchart complexity
-- **Color schemes** - Choose from standard, pastel, monochrome, or colorful themes
-- - **Multiple output formats** - Save as PNG, SVG, or PDF
 
 ## 🚀 Getting Started
 
@@ -55,43 +53,15 @@ def main():
    pip install -r requirements.txt
    ```
 
-3. Make it executable (optional but handy):
-   ```bash
-   chmod +x co_to_f
-   ```
-
 ### Quick Start
 
 The simplest way to use it:
 
 ```bash
-./co_to_f your_python_file.py
+python code_to_flowchart.py your_python_file.py
 ```
 
 That's it! You'll get a nice flowchart saved as a PNG file.
-
-## 🎮 How to Use It
-
-### Basic Command
-
-```bash
-python simple_flowchart.py
-```
-
-This generates a simple example flowchart with the default settings.
-
-### Command Options
-
-You can customise your flowcharts with these options:
-
-```bash
-python simple_flowchart.py -o my_flowchart.png -c colorful --show
-```
-
-- `-o, --output`: Where to save your flowchart
-- `-f, --format`: Choose format (png, svg, pdf)
-- `-c, --color-scheme`: Pick a color scheme (standard, pastel, monochrome, colorful)
-- `--show`: Opens the flowchart automatically when done
 
 ## 🎨 Color Schemes
 
@@ -108,30 +78,6 @@ The tool is smart enough to know when your flowchart is getting complex:
 
 - **Simple flowcharts** (< 10 nodes): Uses larger, more readable shapes
 - **Complex flowcharts** (> 10 nodes): Automatically shrinks shapes to fit everything nicely
-
-## 📚 Creating Your Own Flowcharts
-
-Want to create a custom flowchart? It's easy! Check out the example scripts:
-
-1. Define your nodes (shapes) with positions on a 0-1 scale
-2. Define the connections between nodes
-3. Run the generator
-
-Here's a simplified example:
-
-```python
-flowchart = {
-    "nodes": [
-        {"id": 0, "type": "start_end", "text": "Start", "x": 0.5, "y": 0.9},
-        {"id": 1, "type": "process", "text": "Do something", "x": 0.5, "y": 0.5},
-        {"id": 2, "type": "start_end", "text": "End", "x": 0.5, "y": 0.1}
-    ],
-    "edges": [
-        {"from": 0, "to": 1, "text": ""},
-        {"from": 1, "to": 2, "text": ""}
-    ]
-}
-```
 
 ## 🤝 Contributing
 
